@@ -21,6 +21,7 @@ class CreateAccountController {
             try {
                 $createAccount = new CreateAccount($this->entityManager);
                 $user = $createAccount->execute($pseudo, $email, $password);
+                header("Location: /index.php?route=accueil");
             } catch (\Exception $e) {
                 echo "Erreur : " . $e->getMessage();
             }
