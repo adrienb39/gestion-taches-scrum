@@ -24,7 +24,7 @@ $configuration = ORMSetup::createAttributeMetadataConfiguration($path,$isDevMode
 $configurationBD = [
     'driver' => 'pdo_mysql',
     'user' => 'root',
-    'password' => '',
+    'password' => 'Robot500',
     'dbname' => 'db_taches',
     'host' => 'localhost'
 ];
